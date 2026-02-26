@@ -1,0 +1,196 @@
+# Instrument Specifications
+# Source of truth for tradeable instruments in QEFC system
+#
+# Fields:
+#   symbol: Instrument identifier
+#   tick_size: Minimum price movement
+#   point_value: Dollar value per 1.0 point move per 1.0 lot
+#   contract_size: Standard contract size (units)
+#   min_lot: Minimum position size
+#   max_lot: Maximum position size
+#   lot_step: Lot size increment
+
+instruments:
+  XAUUSD:
+    symbol: XAUUSD
+    tick_size: 0.01
+    point_value: 100.0
+    contract_size: 100
+    min_lot: 0.01
+    max_lot: 100.0
+    lot_step: 0.01
+  
+  EURUSD:
+    symbol: EURUSD
+    tick_size: 0.00001
+    point_value: 10.0
+    contract_size: 100000
+    min_lot: 0.01
+    max_lot: 100.0
+    lot_step: 0.01
+  
+  US100:
+    symbol: US100
+    tick_size: 0.01
+    point_value: 10.0
+    contract_size: 1
+    min_lot: 0.1
+    max_lot: 50.0
+    lot_step: 0.1
+  
+  # Additional FX Pairs (Multi-Asset Expansion - QEFC-009)
+  GBPUSD:
+    symbol: GBPUSD
+    tick_size: 0.00001
+    point_value: 10.0
+    contract_size: 100000
+    min_lot: 0.01
+    max_lot: 100.0
+    lot_step: 0.01
+  
+  USDJPY:
+    symbol: USDJPY
+    tick_size: 0.001
+    point_value: 10.0
+    contract_size: 100000
+    min_lot: 0.01
+    max_lot: 100.0
+    lot_step: 0.01
+  
+  AUDUSD:
+    symbol: AUDUSD
+    tick_size: 0.00001
+    point_value: 10.0
+    contract_size: 100000
+    min_lot: 0.01
+    max_lot: 100.0
+    lot_step: 0.01
+  
+  USDCHF:
+    symbol: USDCHF
+    tick_size: 0.00001
+    point_value: 10.0
+    contract_size: 100000
+    min_lot: 0.01
+    max_lot: 100.0
+    lot_step: 0.01
+  
+  NZDUSD:
+    symbol: NZDUSD
+    tick_size: 0.00001
+    point_value: 10.0
+    contract_size: 100000
+    min_lot: 0.01
+    max_lot: 100.0
+    lot_step: 0.01
+  
+  USDCAD:
+    symbol: USDCAD
+    tick_size: 0.00001
+    point_value: 10.0
+    contract_size: 100000
+    min_lot: 0.01
+    max_lot: 100.0
+    lot_step: 0.01
+  
+  # Additional Indices (Multi-Asset Expansion - QEFC-009)
+  SPX:
+    symbol: SPX
+    tick_size: 0.01
+    point_value: 50.0
+    contract_size: 1
+    min_lot: 0.01
+    max_lot: 10.0
+    lot_step: 0.01
+  
+  US30:
+    symbol: US30
+    tick_size: 1.0
+    point_value: 10.0
+    contract_size: 1
+    min_lot: 0.1
+    max_lot: 20.0
+    lot_step: 0.1
+  
+  GER30:
+    symbol: GER30
+    tick_size: 0.5
+    point_value: 25.0
+    contract_size: 1
+    min_lot: 0.1
+    max_lot: 20.0
+    lot_step: 0.1
+  
+  JP225:
+    symbol: JP225
+    tick_size: 1.0
+    point_value: 10.0
+    contract_size: 1
+    min_lot: 0.1
+    max_lot: 20.0
+    lot_step: 0.1
+  
+  # Additional Commodities (Multi-Asset Expansion - QEFC-009)
+  XAGUSD:
+    symbol: XAGUSD
+    tick_size: 0.01
+    point_value: 50.0
+    contract_size: 5000
+    min_lot: 0.01
+    max_lot: 50.0
+    lot_step: 0.01
+  
+  USOIL:
+    symbol: USOIL
+    tick_size: 0.01
+    point_value: 10.0
+    contract_size: 1000
+    min_lot: 0.01
+    max_lot: 50.0
+    lot_step: 0.01
+  
+  UKOIL:
+    symbol: UKOIL
+    tick_size: 0.01
+    point_value: 10.0
+    contract_size: 1000
+    min_lot: 0.01
+    max_lot: 50.0
+    lot_step: 0.01
+  
+  # Crypto (Multi-Asset Expansion - QEFC-009)
+  BTCUSD:
+    symbol: BTCUSD
+    tick_size: 0.1
+    point_value: 1.0
+    contract_size: 1
+    min_lot: 0.01
+    max_lot: 10.0
+    lot_step: 0.01
+  
+  ETHUSD:
+    symbol: ETHUSD
+    tick_size: 0.01
+    point_value: 1.0
+    contract_size: 1
+    min_lot: 0.1
+    max_lot: 50.0
+    lot_step: 0.1
+  
+  BNBUSD:
+    symbol: BNBUSD
+    tick_size: 0.01
+    point_value: 1.0
+    contract_size: 1
+    min_lot: 0.1
+    max_lot: 50.0
+    lot_step: 0.1
+  
+  ADAUSD:
+    symbol: ADAUSD
+    tick_size: 0.0001
+    point_value: 1.0
+    contract_size: 1
+    min_lot: 1.0
+    max_lot: 100.0
+    lot_step: 1.0
